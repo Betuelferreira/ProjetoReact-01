@@ -10,12 +10,12 @@ import React from "react";
 
 function Banner(){
     return(
-        <div>
+        <div >
             <img src="./src/assets/HeaderHeader_total.png" alt="" />
-            <h1>Banner</h1>
         </div>
     )
 }
 
-export default Banner
 
+
+export default Banner
