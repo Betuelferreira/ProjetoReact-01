@@ -1,5 +1,5 @@
 import React from "react";
-
+import "./Banner.css"
 /* const banner = () => {
     return(
     <div>
@@ -10,8 +10,8 @@ import React from "react";
 
 function Banner(){
     return(
-        <div >
-            <img src="./src/assets/HeaderHeader_total.png" alt="" />
+        <div>
+            <img id="img" src="./src/assets/HeaderHeader_total.png" alt="" />
         </div>
     )
 }

@@ -1,10 +1,10 @@
 import React from "react";
-
+import "./CaixaTexto.css"
 function CampoTexto(props){
     return(
-        <div>
+        <div id="divTexto">
             <label>{props.label}</label>
-            <input type="text" placeholder={props.placeholder} />
+            <input id="inp" type="text" placeholder={props.placeholder} />
             
         </div>
     )
