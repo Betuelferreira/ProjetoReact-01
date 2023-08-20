@@ -1,12 +1,16 @@
 import React from "react";
+import "./Selecionar.css";
 
 function Selecionar(){
     return(
-        <select name="" id="">
-           <option value="">Programação</option> 
-           <option value="">Fron-End</option> 
-           <option value="">Back-End</option> 
+        <div id="divselect">
+        <label id="lbls">Time</label>
+        <select name="" id="idselect">
+           <option value="0">Programação</option> 
+           <option value="1">Fron-End</option> 
+           <option value="2">Back-End</option> 
         </select>
+        </div>
     )
 }
 

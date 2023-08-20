@@ -1,25 +1,26 @@
-#divTexto{
+#divselect{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-content: space-around;
     align-items: flex-start;
-
+    
     
 }
-
-#inp{
-    width: 80%;
-    height: 20px;
+#idselect{
+    width: 83.2%;
+    height: 40px;
+    
     /* border-radius: 0; */
     border: solid 0;
     padding: 10px;
     font-size: 10px;
     box-shadow: 1px 3px 8px rgb(179, 179, 179);
-
+    margin-left: auto;
+    margin-right: auto; 
 }
 
-#lbl{
+#lbls{
     margin-bottom: 5px;
     font-size: 11px;
 }
