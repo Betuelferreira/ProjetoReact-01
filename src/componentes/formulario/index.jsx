@@ -12,14 +12,17 @@ function Formulario() {
         <div id="divform">
 
             <form action="">
-                <Titulo titulo="Preencha os dados para criar o card do colaborador.
+                <div id="divtext">
+                    <Titulo Tamanho={16} titulo="Preencha os dados para criar o card do colaborador.
 "/>
+                </div>
+
                 {/* <h1>Preencha os dados para criar o card do colaborador</h1> */}
                 <CampoTexto label="Nome:" placeholder="Digite seu nome" />
                 <CampoTexto label="Cargo:" placeholder="Digite seu Cargo" />
                 <CampoTexto label="Imagem:" placeholder="Digite a URL da imagem" />
                 <Selecionar />
-                <Botao/>
+                <Botao />
 
             </form>
         </div>

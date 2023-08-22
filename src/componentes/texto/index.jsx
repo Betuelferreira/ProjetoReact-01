@@ -2,9 +2,9 @@ import React from "react";
 
 function Titulo(props) {
     return (
-        <div id="divtext">
-            <h1 id={props.idh1}>{props.titulo}</h1>
-        </div>
+       
+            <h1 style={{fontSize:props.Tamanho, color:props.Cor}} >{props.titulo}</h1>
+        
     )
 
 }

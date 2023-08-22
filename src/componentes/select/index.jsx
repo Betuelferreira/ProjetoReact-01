@@ -8,7 +8,11 @@ function Selecionar(){
         <select name="" id="idselect">
            <option value="0">Programação</option> 
            <option value="1">Fron-End</option> 
-           <option value="2">Back-End</option> 
+           <option value="2">Data Science</option> 
+           <option value="3">Deveps</option> 
+           <option value="4">UX e Design</option> 
+           <option value="5">Mobile</option>
+           <option value="6">Inovação e Gestão</option> 
         </select>
         </div>
     )
