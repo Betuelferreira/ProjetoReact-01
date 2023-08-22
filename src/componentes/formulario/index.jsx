@@ -5,15 +5,18 @@ import Titulo from '../texto';
 import Botao from '../botão'
 import "./Form.css";
 
+function handleAdd(){
+    alert("teste");
+}
 
 
 function Formulario() {
     return (
         <div id="divform">
 
-            <form action="">
+            <form className="formulario" action="" onSubmit={handleAdd}>
                 <div id="divtext">
-                    <Titulo Tamanho={16} titulo="Preencha os dados para criar o card do colaborador.
+                    <Titulo Tamanho={25} titulo="Preencha os dados para criar o card do colaborador.
 "/>
                 </div>
 

@@ -4,7 +4,7 @@ import "./botao.css"
 function Botao() {
     return (
         <div id="divbut">
-            <button>Criar card</button>
+            <button type="submit">Criar card</button>
         </div>
     )
 }

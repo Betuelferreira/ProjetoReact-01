@@ -3,9 +3,9 @@ import "./Selecionar.css";
 
 function Selecionar(){
     return(
-        <div id="divselect">
+        <div className="divselect">
         <label id="lbls">Time</label>
-        <select name="" id="idselect">
+        <select name="" id="idselect" placeholder="teste">
            <option value="0">Programação</option> 
            <option value="1">Fron-End</option> 
            <option value="2">Data Science</option> 

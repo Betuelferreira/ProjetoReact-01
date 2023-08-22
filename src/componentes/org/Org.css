@@ -1,3 +1,6 @@
 #divorg{
+    margin-right: auto;
+    margin-left: auto;
     display: flex;
+    width: 60vw;
 }
