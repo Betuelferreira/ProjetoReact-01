@@ -5,7 +5,7 @@ import Formulario from './componentes/formulario';
 import Organizacao from './componentes/org'
 
 function App() {
-  const [count, setCount] = useState(0)
+  /* const [count, setCount] = useState(0) */
 
   return (
     

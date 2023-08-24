@@ -4,6 +4,7 @@ import Selecionar from '../select';
 import Titulo from '../texto';
 import Botao from '../botão'
 import "./Form.css";
+import { useState } from "react";
 
 function handleAdd(){
     alert("teste");
@@ -11,6 +12,15 @@ function handleAdd(){
 
 
 function Formulario() {
+
+
+    const [nome, setNome] = useState([])
+    const [cargo, setCargo] = useState([])
+    const [image, setImage] = useState([])
+    
+
+
+
     return (
         <div id="divform">
 
@@ -25,7 +35,7 @@ function Formulario() {
                 <CampoTexto label="Cargo:" placeholder="Digite seu Cargo" />
                 <CampoTexto label="Imagem:" placeholder="Digite a URL da imagem" />
                 <Selecionar />
-                <Botao />
+                <button type="submit">Criar card</button>
 
             </form>
         </div>

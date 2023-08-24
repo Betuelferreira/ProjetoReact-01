@@ -16,7 +16,7 @@
     
     /* border-radius: 0; */
     border: solid 0;
-   
+    width: 100%;
     padding: 20px;
     font-size: 10px;
     box-shadow: 1px 3px 8px rgb(179, 179, 179);
