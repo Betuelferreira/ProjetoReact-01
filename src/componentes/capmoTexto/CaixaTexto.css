@@ -3,7 +3,7 @@
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
-    width: 80%;
+    width: 95%;
     
     
 
@@ -15,16 +15,21 @@
     height: 20px;
     border: solid 0;
     padding: 20px 0 20px 10px;
+     */
     font-size: 10px;
-    box-shadow: 1px 3px 8px rgb(179, 179, 179); */
-    padding: 1rem;
+    box-shadow: 1px 3px 8px rgb(179, 179, 179);
+    padding:  0 0 0 1rem;
     border: solid 0;
-    width: 100%;
+    border-radius: 5px;
+    width: 95%;
+    height: 60px;
+    
+    
 
 
 }
 
-.lbl{
+.divTexto label{
     margin-bottom: 5px;
     font-size: 11px;
 }

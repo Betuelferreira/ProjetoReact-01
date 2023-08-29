@@ -22,10 +22,10 @@ function Formulario() {
 
 
     return (
-        <div id="divform">
+        <div className="divform">
 
             <form className="formulario" action="" onSubmit={handleAdd}>
-                <div id="divtext">
+                <div className="divtext">
                     <Titulo Tamanho={25} titulo="Preencha os dados para criar o card do colaborador.
 "/>
                 </div>

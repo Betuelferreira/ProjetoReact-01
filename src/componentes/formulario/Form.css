@@ -1,4 +1,12 @@
-form{
+
+
+.divform{
+    display: flex;
+    justify-content: center;
+    padding: 5%;
+}
+
+.divform form{
     
     background-color: #F2F2F2;
     /* width: 60%;
@@ -8,7 +16,7 @@ form{
     justify-content: space-evenly;*/
     border-radius: 12px; 
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
     justify-content: center;
     gap: 1em;
@@ -20,22 +28,15 @@ form{
     
 }
 
-#divform{
-    display: flex;
-    justify-content: center;
-    padding: 5%;
-}
-
-h1{
+.divform h1{
     /* font-size: 18px; */
     font-family: 'Prata', serif;
     
 }
-#divtext{
+.divtext{
     display: flex;
     width: 83%;
-    margin-left: auto;
-    margin-right: auto;
+    
     
 }
 
