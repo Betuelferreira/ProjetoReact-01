@@ -1,19 +1,24 @@
 import React from "react";
 import "./Selecionar.css";
 
-function Selecionar(){
-    return(
+function Selecionar(props) {
+    const Digitado = (e) => {
+        props.alterado(e.target.value)
+    }
+
+    return (
         <div className="divselect">
-        <label >Time</label>
-        <select name="" placeholder="teste">
-           <option value="0">Programação</option> 
-           <option value="1">Fron-End</option> 
-           <option value="2">Data Science</option> 
-           <option value="3">Deveps</option> 
-           <option value="4">UX e Design</option> 
-           <option value="5">Mobile</option>
-           <option value="6">Inovação e Gestão</option> 
-        </select>
+            <label >Time</label>
+            <select value={props.valor} onChange={Digitado} name="" placeholder="">
+                <option hidden >Selecione seu time</option>
+                <option >Programação</option>
+                <option >Fron-End</option>
+                <option >Data Science</option>
+                <option >Deveps</option>
+                <option >UX e Design</option>
+                <option >Mobile</option>
+                <option >Inovação e Gestão</option>
+            </select>
         </div>
     )
 }

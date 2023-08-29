@@ -4,14 +4,19 @@ import { useState } from 'react'
 
 
 function CampoTexto(props){
-   
-        const[valor, setValor]= useState()
+    
+    
+    const Digitado = (e) =>{
+        props.alterado(e.target.value)
+     }
+
+        /* const[valor, setValor]= useState() */
     return(
         <div className="divTexto">
             
             <label >{props.label}</label>
-            <input onChange={(e) => setValor(e.target.value)} className="inp" type="text"  placeholder={props.placeholder} />
-            {console.log(valor)}
+            <input value={props.valor} onChange={Digitado} className="inp" type="text"  placeholder={props.placeholder} />
+            
 
         </div>
     )

@@ -16,9 +16,9 @@
     justify-content: space-evenly;*/
     border-radius: 12px; 
     display: flex;
-    align-items: flex-start;
+   /*  align-items: flex-start; */
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     gap: 1em;
     padding: 2rem;
     width: 60%;

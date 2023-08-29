@@ -6,17 +6,26 @@ import Botao from '../botão'
 import "./Form.css";
 import { useState } from "react";
 
-function handleAdd(){
-    alert("teste");
-}
 
 
-function Formulario() {
+function Formulario(props) {
 
+    function handleAdd(e) {
+        e.preventDefault()
+        props.colaboradorCadastrado({
+            nome: nome,
+            cargo: cargo,
+            imagem: imagem,
+            time: time,
 
-    const [nome, setNome] = useState([])
-    const [cargo, setCargo] = useState([])
-    const [image, setImage] = useState([])
+        })
+        
+    }
+    
+    const [nome, setNome] = useState("")
+    const [cargo, setCargo] = useState("")
+    const [imagem, setImagem] = useState("")
+    const [time, setTime] = useState("")
     
 
 
@@ -26,15 +35,38 @@ function Formulario() {
 
             <form className="formulario" action="" onSubmit={handleAdd}>
                 <div className="divtext">
-                    <Titulo Tamanho={25} titulo="Preencha os dados para criar o card do colaborador.
-"/>
+                    <Titulo Tamanho={25} titulo="Preencha os dados para criar o card do colaborador."
+                    
+                    />
                 </div>
 
                 {/* <h1>Preencha os dados para criar o card do colaborador</h1> */}
-                <CampoTexto label="Nome:" placeholder="Digite seu nome" />
-                <CampoTexto label="Cargo:" placeholder="Digite seu Cargo" />
-                <CampoTexto label="Imagem:" placeholder="Digite a URL da imagem" />
-                <Selecionar />
+                <CampoTexto
+                    valor={nome}
+                    alterado={valor => setNome(valor)}
+                    label="Nome:"
+                    placeholder="Digite seu nome"
+                />
+
+                <CampoTexto
+                    valor={cargo}
+                    alterado={valor => setCargo(valor)}
+                    label="Cargo:"
+                    placeholder="Digite seu Cargo"
+
+                />
+                <CampoTexto
+                    valor={imagem}
+                    alterado={valor => setImagem(valor)}
+                    label="Imagem:"
+                    placeholder="Digite a URL da imagem" />
+
+
+                <Selecionar
+                    valor={time}
+                    alterado={valor => setTime(valor)}
+
+                />
                 <button type="submit">Criar card</button>
 
             </form>
