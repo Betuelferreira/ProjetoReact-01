@@ -17,7 +17,6 @@ function Formulario(props) {
             cargo: cargo,
             imagem: imagem,
             time: time,
-
         })
         
     }
