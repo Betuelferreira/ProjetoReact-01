@@ -9,16 +9,9 @@
 .divform form{
     
     background-color: #F2F2F2;
-    /* width: 60%;
-    height: 600px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;*/
     border-radius: 12px; 
     display: flex;
-   /*  align-items: flex-start; */
     flex-direction: column;
-    /* justify-content: center; */
     gap: 1em;
     padding: 2rem;
     width: 60%;

@@ -11,7 +11,7 @@ import "./Banner.css"
 function Banner(){
     return(
         <div>
-            <img id="img" src="./src/assets/HeaderHeader_total.png" alt="" />
+            <img className="img" src="./src/assets/HeaderHeader_total.png" alt="" />
         </div>
     )
 }
