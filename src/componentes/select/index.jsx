@@ -9,7 +9,7 @@ function Selecionar(props) {
     return (
         <div className="divselect">
             <label >Time</label>
-            <select value={props.valor} onChange={Digitado} name="" placeholder="">
+            <select id="sele" value={props.valor} onChange={Digitado} name="" placeholder="">
                 <option hidden >Selecione seu time</option>
                 <option >Programação</option>
                 <option >Fron-End</option>

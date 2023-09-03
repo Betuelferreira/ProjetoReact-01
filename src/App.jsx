@@ -4,7 +4,9 @@ import Banner from './componentes/banner';
 import Formulario from './componentes/formulario';
 import Organizacao from './componentes/org'
 import Time from './componentes/time';
+import Selecionar from './componentes/select'; 
 
+ 
 function App() {
   const [colaboradores, setColaboradores] = useState([])
   const [programador, setProgramador] = useState([])
@@ -14,8 +16,13 @@ function App() {
   const [ux, setUx] = useState([])
   const [mobile, setMobile] = useState([])
   const [gestão, setGestão] = useState([])
+  /* let Vtime = document.getElementById("sele") */
 
   const NovoColaborador = (colaborador) => {
+   /*  if(Vtime == "programação"){
+     console.log(colaboradores)
+      setColaboradores([...colaboradores, colaborador]);
+    } */
     console.log(colaboradores)
     setColaboradores([...colaboradores, colaborador]);
     
