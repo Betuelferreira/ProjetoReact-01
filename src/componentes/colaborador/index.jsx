@@ -1,15 +1,15 @@
 import React from "react";
 import "./colaborador.css"
 
-function Colaborador(){
+function Colaborador({nome, cargo, imagem}){
     return(
-        <div>
-            <div>
-                <img src="" alt="" />
+        <div className="colaborador">
+            <div className="cabecalho" >
+                <img src={imagem} alt="imagemPerfil" />
             </div>
-            <div>
-                <h4></h4>
-                <h5></h5>
+            <div className="rodape">
+                <h4>{nome}</h4>
+                <p>{cargo}</p>
             </div>
         </div>
     )

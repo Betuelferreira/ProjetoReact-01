@@ -11,13 +11,7 @@ function Selecionar(props) {
             <label >Time</label>
             <select id="sele" value={props.valor} onChange={Digitado} name="" placeholder="">
                 <option hidden >Selecione seu time</option>
-                <option >Programação</option>
-                <option >Fron-End</option>
-                <option >Data Science</option>
-                <option >Deveps</option>
-                <option >UX e Design</option>
-                <option >Mobile</option>
-                <option >Inovação e Gestão</option>
+                {props.times.map(time => <option>{time}</option>)}
             </select>
         </div>
     )
