@@ -7,6 +7,11 @@ function Time(props) {
     const cssCard = { borderColor: props.card }
 
     return (
+
+
+        (props.colaboradores.length > 0) ? 
+
+
         <section className="time" style={cssFundo}>
             <h2 style={cssCard}>{props.nome}</h2>
             <div className="cards">
@@ -15,12 +20,14 @@ function Time(props) {
                         <Colaborador
                             key={colaborador.nome}
                             corCard={props.card}
+                            colaborador={colaborador}
                             nome={colaborador.nome}
                             cargo={colaborador.cargo}
                             imagem={colaborador.imagem}
                         />)}
             </div>
         </section>
+        : <div></div>
 
     )
 }

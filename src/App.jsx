@@ -5,6 +5,7 @@ import Formulario from './componentes/formulario';
 import Organizacao from './componentes/org'
 import Time from './componentes/time';
 import Selecionar from './componentes/select';
+import Footer from './componentes/footer';
 
 
 function App() {
@@ -58,7 +59,7 @@ function App() {
     },
   ]
   return (
-
+<div>
     <div className='container'>
       <Banner />
       <Formulario times={times.map(times => times.nome)} colaboradorCadastrado={colaborador => NovoColaborador(colaborador)} />
@@ -73,9 +74,10 @@ function App() {
           card={time.card}
           colaboradores={colaboradores.filter(colaborador => colaborador.time === time.nome)}
         />)}
-
+   
     </div>
-
+    <Footer/>
+    </div> 
 
 
   )
