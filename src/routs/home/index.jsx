@@ -5,6 +5,7 @@ import Formulario from '../../componentes/formulario';
 import Organizacao from '../../componentes/org'
 import Time from '../../componentes/time';
 import Footer from '../../componentes/footer';
+import Header from '../../componentes/header';
 
 
 export default function Home() {
@@ -62,6 +63,7 @@ export default function Home() {
     return (
         <div>
             <div className='container'>
+                <Header/>
                 <Banner />
                 <Formulario times={times.map(times => times.nome)} colaboradorCadastrado={colaborador => NovoColaborador(colaborador)} />
 
