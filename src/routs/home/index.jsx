@@ -63,6 +63,9 @@ export default function Home() {
     return (
         <div>
             <div className='container'>
+                
+                
+                
                 <Header/>
                 <Banner />
                 <Formulario times={times.map(times => times.nome)} colaboradorCadastrado={colaborador => NovoColaborador(colaborador)} />

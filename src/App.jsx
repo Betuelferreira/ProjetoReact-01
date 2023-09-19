@@ -3,6 +3,7 @@ import Home from './routs/home';
 import './App.css'
 import Sobre from './routs/sobre';
 import Contatos from './routs/contantos';
+import Login from './routs/login';
 
 
 function App() {
@@ -20,6 +21,10 @@ function App() {
     {
       path: '/Contatos',
       element: <Contatos />
+    },
+    {
+      path:"/login",
+      element: <Login/>
     }
   
   ]

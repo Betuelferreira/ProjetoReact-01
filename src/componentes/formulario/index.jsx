@@ -19,6 +19,10 @@ function Formulario(props) {
             time: time,
         })
         
+        setNome("")
+        setImagem("")
+        setTime("")
+        setCargo("")
         
     }
     
