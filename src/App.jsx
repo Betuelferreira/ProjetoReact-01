@@ -34,7 +34,9 @@ function App() {
   )
 
   return (
-    <RouterProvider router={rotas} />
+    <AuthProvider>
+      <RouterProvider router={rotas} />
+    </AuthProvider>
   )
 }
 

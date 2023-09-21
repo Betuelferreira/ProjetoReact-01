@@ -1,7 +1,16 @@
 
 import "./login.css"
-import { useState } from 'react'
+import { useEffect, useState, useContext } from 'react'
+import { Link } from "react-router-dom"
+import {AuthContext} from "../../context/auth"
+
 export default function Login(){
+
+    const {logado} = useContext{AuthContext}
+
+    useEffect(()=>{
+        
+    },[senha])
      
     const [usuario, setUsuario] = useState("")
     const [senha, setSenha] = useState("")
@@ -20,16 +29,16 @@ export default function Login(){
 
 
     return(
-        <div className="container">
+        <div className="container_login">
             
-            <form className="formLogin" onSubmit={HandleSubmit}>
+            <form className="form_login" onSubmit={HandleSubmit}>
             <div className="Logo">
-                <img src="./src/assets/logo.png" alt="Logo" />
+               <Link to="/"><img src="./src/assets/logo.png" alt="Logo" /></Link> 
             </div>
 
-            <label htmlFor="">Usuario</label>
+            <label htmlFor="">Usuário:</label>
             <input onChange={AddUser} />
-            <label htmlFor="">Senha</label>
+            <label htmlFor="">Senha:</label>
             <input onChange={AddSenha}/>
             <button className="botao" type="submit">Enviar</button>
         </form>

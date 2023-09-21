@@ -69,7 +69,6 @@ export default function Home() {
                 <Header/>
                 <Banner />
                 <Formulario times={times.map(times => times.nome)} colaboradorCadastrado={colaborador => NovoColaborador(colaborador)} />
-
                 <Organizacao />
 
                 {times.map(time =>
