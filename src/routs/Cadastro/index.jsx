@@ -1,12 +1,13 @@
 
-import "./login.css"
+/* import "./login.css" */
 import { useEffect, useState, useContext } from 'react'
 import { Link } from "react-router-dom"
 import {AuthContext} from "../../context/auth"
+import "./cadastro.css"
 
-export default function Login(){
+export default function Cadastro(){
 
-    const {user, login, logout} = useContext(AuthContext)
+    const {user, login, logout, cadastro} = useContext(AuthContext)
     /* const {logado} = useContext{AuthContext}
  */
     useEffect(()=>{
@@ -15,10 +16,13 @@ export default function Login(){
      
     const [usuario, setUsuario] = useState("")
     const [senha, setSenha] = useState("")
+    const [email, setEmail] = useState("")
+    const [idade, setIdade] = useState("")
+
 
     function HandleSubmit(e){
         e.preventDefault()
-        login(usuario,senha)
+        cadastro(usuario,senha,email,idade)
     }
 
     function AddUser(e){
@@ -32,7 +36,7 @@ export default function Login(){
     return(
         <div className="container_login">
             
-            <form className="form_login" onSubmit={HandleSubmit}>
+            <form className="form_login cadastro" onSubmit={HandleSubmit}>
             <div className="Logo">
                <Link to="/"><img src="./src/assets/logo.png" alt="Logo" /></Link> 
             </div>
@@ -41,6 +45,11 @@ export default function Login(){
             <input onChange={AddUser} />
             <label htmlFor="">Senha:</label>
             <input onChange={AddSenha}/>
+            <label htmlFor="">Email:</label>
+            <input type='email' onChange={(e)=> setEmail(e.target.value)} />
+            <label htmlFor="">idade:</label>
+            <input type='texto' onChange={(e)=> setIdade(e.target.value)}/>
+            
             <button className="botao" type="submit">Enviar</button>
         </form>
         </div>

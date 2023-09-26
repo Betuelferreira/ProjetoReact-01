@@ -4,6 +4,8 @@ import './App.css'
 import Sobre from './routs/sobre';
 import Contatos from './routs/contantos';
 import Login from './routs/login';
+import AuthProvider from './context/auth';
+import Cadastro from './routs/Cadastro';
 
 
 function App() {
@@ -25,6 +27,10 @@ function App() {
     {
       path:"/login",
       element: <Login/>
+    },
+    {
+      path:"/Cadastro",
+      element: <Cadastro/>
     }
   
   ]
