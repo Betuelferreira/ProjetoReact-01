@@ -45,3 +45,9 @@ useEffect(()=>{
         </div>
     )
 } */
+
+export default function Sobre(){
+    return(
+        console.log("Sobre")
+    )
+}
