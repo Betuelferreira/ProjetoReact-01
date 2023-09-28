@@ -1,4 +1,4 @@
-/* import { useEffect, useState } from "react"
+import { useEffect, useState } from "react"
 import Banner from "../../componentes/banner"
 import Footer from "../../componentes/footer"
 import Header from "../../componentes/header"
@@ -6,9 +6,10 @@ import axios from "axios";
 
 
 export default function Sobre(){
-    const[data, setData] = useState()
+    const[data, setData] = useState([])
 
 const HandleFetch = async () =>{
+
     await axios.get("https://randomuser.me/api/?results=20")
     .then((response)=>{
         setData(response.data.results)
@@ -32,22 +33,26 @@ useEffect(()=>{
         <div>
             <Header/>
             <Banner/>
+                <div>
+                    {data.map((item) => {
+                        return(
+                            <div key={item.cell}>
+                                <p>{item.gender}</p>
+                                <p>{item.name.first}</p>
 
-            <div>{data.map((item)) => {
-                return(
-                    <p></p>
-                )
-            }
-            </div>
+                            </div>
+                        )
+                    })}
+                </div>
+           
             <Footer/>
 
-      
         </div>
     )
-} */
+} 
 
-export default function Sobre(){
+ /* export default function Sobre(){
     return(
         console.log("Sobre")
     )
-}
+}  */

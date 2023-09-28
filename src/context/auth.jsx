@@ -6,9 +6,7 @@ export default function AuthProvider({ children }) {
 
 
 
-    const [user, setUser] = useState([
-        
-    ])
+    const [user, setUser] = useState([])
 
     /* const [logado, setLogado] = useState(false) */
 
