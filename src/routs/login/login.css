@@ -53,6 +53,7 @@
 
 .form_login h1{
     color: #FFF;
+    font-size: 2em;
 }
 
 
@@ -64,27 +65,34 @@
 }
 
 .container_usuario{
-    
     width: 90%;
-    font-size: 2px;
-
 }
 
+.container_usuario label{
+    font-size: 1em;
+}
+
+
 .container_usuario input{
-    
+    margin: 10px 0 10px 0 ;
     height: 2rem;
     border: 0;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     width: 100%;
-    font-size: 7em;
+    font-size: 1em;
     text-align: center;
-    
-
+}
+.cadastrar{
+    display: flex;
+    font-size: 12px;
+    width: 90%;
+    justify-content: space-between;
 }
 
 .botao{
+    border-radius: 2em;
     color: black;
-    background-color: #2472d8;
-    width: 80%;
+    background-color: #95FFD4;
+    width: 90%;
     height: 2rem;
 }

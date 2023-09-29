@@ -42,9 +42,9 @@ export default function Login() {
                 <form className="form_login" onSubmit={HandleSubmit}>
 
 
-                    <div className="Logo">
+                   {/*  <div className="Logo">
                         <Link to="/"><img src="./src/assets/logo.png" alt="Logo" /></Link>
-                    </div>
+                    </div> */}
                     <h1>Login</h1>
                     <div className="container_usuario">
                         <label htmlFor="">Usuário:</label>
@@ -53,6 +53,11 @@ export default function Login() {
                     
                         <label htmlFor="">Senha:</label>
                         <input placeholder="Senha" onChange={AddSenha} />
+                    </div>
+
+                    <div className="cadastrar">
+                        <p>Esqueci a Senha</p>
+                        <p>Não tenho cadastro</p>
                     </div>
 
                     <button className="botao" type="submit">Enviar</button>
