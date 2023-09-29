@@ -2,48 +2,63 @@
 import "./login.css"
 import { useEffect, useState, useContext } from 'react'
 import { Link } from "react-router-dom"
-import {AuthContext} from "../../context/auth"
+import { AuthContext } from "../../context/auth"
 
-export default function Login(){
+export default function Login() {
 
-    const {user, login, logout} = useContext(AuthContext)
+    const { user, login, logout } = useContext(AuthContext)
     /* const {logado} = useContext{AuthContext}
  */
-    useEffect(()=>{
-        
-    },[])
-     
+    useEffect(() => {
+
+    }, [])
+
     const [usuario, setUsuario] = useState("")
     const [senha, setSenha] = useState("")
 
-    function HandleSubmit(e){
+    function HandleSubmit(e) {
         e.preventDefault()
-        login(usuario,senha)
+        login(usuario, senha)
     }
 
-    function AddUser(e){
+    function AddUser(e) {
         setUsuario(e.target.value)
     }
-    function AddSenha(e){
+    function AddSenha(e) {
         setSenha(e.target.value)
     }
 
 
-    return(
+    return (
         <div className="container_login">
-            
-            <form className="form_login" onSubmit={HandleSubmit}>
-            <div className="Logo">
-               <Link to="/"><img src="./src/assets/logo.png" alt="Logo" /></Link> 
-            </div>
 
-            <label htmlFor="">Usuário:</label>
-            <input onChange={AddUser} />
-            <label htmlFor="">Senha:</label>
-            <input onChange={AddSenha}/>
-            <button className="botao" type="submit">Enviar</button>
-        </form>
+            <div className="container_conteudo">
+                <div className="animacao">
+                    <img src="./src/assets/enter-otp-animate.svg" alt="" />
+                </div>
+
+
+
+                <form className="form_login" onSubmit={HandleSubmit}>
+
+
+                    <div className="Logo">
+                        <Link to="/"><img src="./src/assets/logo.png" alt="Logo" /></Link>
+                    </div>
+                    <h1>Login</h1>
+                    <div className="container_usuario">
+                        <label htmlFor="">Usuário:</label>
+                        <input placeholder="Usuário" onChange={AddUser} />
+
+                    
+                        <label htmlFor="">Senha:</label>
+                        <input placeholder="Senha" onChange={AddSenha} />
+                    </div>
+
+                    <button className="botao" type="submit">Enviar</button>
+                </form>
+            </div>
         </div>
-        
+
     )
 }
