@@ -7,6 +7,10 @@
     border-radius: 20px;
     background-color: #ffffff;
 } */
+
+.Logo img{
+    width: 5em;
+}
 .container_login{
     display: flex;
     align-items: center;
@@ -20,7 +24,7 @@
   } 
 
   .container_conteudo{
-      width: 80%;
+      width: 60%;
       height: 70%;
       background-color: rgb(255, 255, 255);
       display: flex;
@@ -92,7 +96,13 @@
 .botao{
     border-radius: 2em;
     color: black;
-    background-color: #95FFD4;
+<<<<<<< HEAD
+    background-color: #82CFFA;
+=======
+    background-color: #06ff9b;
+>>>>>>> c8b6a057212309ab765de489b2d710eb6a0988a5
     width: 90%;
     height: 2rem;
+    font-size: 10px;
+    
 }
