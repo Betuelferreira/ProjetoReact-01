@@ -55,7 +55,7 @@ export default function Login() {
 
                     <div className="cadastrar">
                         <p>Esqueci a Senha</p>
-                        <p>Não tenho cadastro</p>
+                        <Link to="/cadastro">Não tenho cadastro</Link>
                     </div>
 
                     <button className="botao" type="submit">ENTRAR</button>

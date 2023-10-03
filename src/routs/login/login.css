@@ -7,9 +7,16 @@
     border-radius: 20px;
     background-color: #ffffff;
 } */
-
+.Logo{
+    
+    height: 25%;
+    display: flex;
+    align-items: flex-end
+}
 .Logo img{
+    
     width: 5em;
+   
 }
 .container_login{
     display: flex;
@@ -21,6 +28,7 @@
     margin: 0;
     font-family: 'Poppins', sans-serif;
     font-family: 'Roboto', sans-serif;
+    background-color: #F2F2F2;
   } 
 
   .container_conteudo{
@@ -45,7 +53,7 @@
   .form_login{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
     width: 50%;
     height: 100%;
     background-color: #6278f7;
@@ -91,22 +99,17 @@
     font-size: 12px;
     width: 90%;
     justify-content: space-between;
+    color: #FFF;
 }
 
 .botao{
     border-radius: 2em;
     color: black;
-<<<<<<< HEAD
-<<<<<<< HEAD
-    background-color: #82CFFA;
-=======
+
     background-color: #06ff9b;
->>>>>>> c8b6a057212309ab765de489b2d710eb6a0988a5
-=======
-    background-color: #06ff9b;
->>>>>>> c8b6a057212309ab765de489b2d710eb6a0988a5
     width: 90%;
     height: 2rem;
-    font-size: 10px;
+    font-size: 13px;
+    color: #6278f7;
     
 }

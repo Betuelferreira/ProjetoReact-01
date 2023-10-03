@@ -37,7 +37,7 @@ export default function Cadastro(){
         <div className="container_login">
             
             <form className="form_login cadastro" onSubmit={HandleSubmit}>
-            <div className="Logo">
+            <div className="logo">
                <Link to="/"><img src="./src/assets/logo.png" alt="Logo" /></Link> 
             </div>
 
