@@ -37,13 +37,16 @@ export default function Login() {
                     <img src="./src/assets/enter-otp-animate.svg" alt="" />
                 </div>
 
-
+        <div className="div_direita">
 
                 <form className="form_login" onSubmit={HandleSubmit}>
 
-
+                <div className="Logo">
+                        <Link to="/"><img src="./src/assets/logo azul.png" alt="Logo" /></Link>
+                    </div>
                    
-                    <h1>Login</h1>
+                    <h3>Login</h3>
+
                     <div className="container_usuario">
                         <label htmlFor="">Usuário:</label>
                         <input placeholder="Usuário" onChange={AddUser} />
@@ -59,10 +62,9 @@ export default function Login() {
                     </div>
 
                     <button className="botao" type="submit">ENTRAR</button>
-                    <div className="Logo">
-                        <Link to="/"><img src="./src/assets/logo.png" alt="Logo" /></Link>
-                    </div>
+                    
                 </form>
+                </div>
             </div>
         </div>
 
