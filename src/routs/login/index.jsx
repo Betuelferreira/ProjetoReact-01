@@ -37,33 +37,41 @@ export default function Login() {
                     <img src="./src/assets/enter-otp-animate.svg" alt="" />
                 </div>
 
-        <div className="div_direita">
+                <div className="div_direita">
 
-                <form className="form_login" onSubmit={HandleSubmit}>
+                    <form className="form_login" onSubmit={HandleSubmit}>
 
-                <div className="Logo">
-                        <Link to="/"><img src="./src/assets/logo azul.png" alt="Logo" /></Link>
-                    </div>
-                   
-                    <h3>Login</h3>
+                        <div className="Logo">
+                            <Link to="/"><img src="./src/assets/logo azul.png" alt="Logo" /></Link>
+                        </div>
 
-                    <div className="container_usuario">
-                        <label htmlFor="">Usuário:</label>
-                        <input placeholder="Usuário" onChange={AddUser} />
+                        <p className="titulo">Login</p>
 
-                    
-                        <label htmlFor="">Senha:</label>
-                        <input type="password" placeholder="Senha" onChange={AddSenha} />
-                    </div>
+                        <div className="container_usuario">
+                            <label htmlFor="">Usuário:</label>
+                            <input placeholder="Usuário" onChange={AddUser} />
 
-                    <div className="cadastrar">
-                        <p>Esqueci a Senha</p>
-                        <Link to="/cadastro">Não tenho cadastro</Link>
-                    </div>
 
-                    <button className="botao" type="submit">ENTRAR</button>
-                    
-                </form>
+                            <label htmlFor="">Senha:</label>
+                            <input type="password" placeholder="Senha" onChange={AddSenha} />
+                        </div>
+
+                        <div className="Esqueci_senha">
+                            <div>
+                                <input id="caixa" type="checkbox" />
+                                <label htmlFor="caixa">Manter Conectado</label>
+                            </div>
+
+                            <Link>Esqueci a Senha</Link>
+
+                        </div>
+                        <div className="botoes">
+                            <button className="botao1" type="submit">ENTRAR</button>
+                            <button className="botao2"><Link to="/Cadastro">CADASTRE-SE GRÁTIS</Link> </button>
+                        </div>
+
+
+                    </form>
                 </div>
             </div>
         </div>
