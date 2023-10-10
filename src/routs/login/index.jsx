@@ -4,7 +4,7 @@ import { useEffect, useState, useContext } from 'react';
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../context/auth";
 import Animacao from '../../assets/enter-otp-animate.svg';
-import LogoA from "../../assets/logo_azul.png";
+/* import LogoA from "../../assets/logo_azul.png"; */
 
 export default function Login() {
 
@@ -44,7 +44,7 @@ export default function Login() {
                     <form className="form_login" onSubmit={HandleSubmit}>
 
                         <div className="Logo">
-                            <Link to="/"><img src={LogoA} alt="Logo" /></Link>
+                            {/* <Link to="/"><img src={LogoA} alt="Logo" /></Link> */}
                         </div>
 
                         <p className="titulo">Login</p>
