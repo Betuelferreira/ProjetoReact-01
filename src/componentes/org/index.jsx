@@ -1,7 +1,7 @@
 import React from "react";
 import Titulo from "../texto";
 import "./Org.css";
-import icoCard from '../../assets/Botão add-01 1.png'
+import icoCard from '../../assets/Botao_ad.png'
 
 function Organizacao(){
     return(

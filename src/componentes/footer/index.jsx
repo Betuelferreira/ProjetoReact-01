@@ -1,7 +1,7 @@
 import React from "react";
 import "./footer.css"
 import {BsFacebook, BsInstagram, BsTwitter} from "react-icons/bs"
-import Logo from '../../assets/logo.png'
+import Logo from '../../assets/Logo.png'
 function Footer(){
     return(
         <footer className="footer_area">
