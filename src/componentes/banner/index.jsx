@@ -1,5 +1,6 @@
 import React from "react";
 import "./Banner.css"
+import bannerIMG from  '../../assets/HeaderHeader_total.png'
 /* const banner = () => {
     return(
     <div>
@@ -11,7 +12,7 @@ import "./Banner.css"
 function Banner(){
     return(
         <div>
-            <img className="img" src="./src/assets/HeaderHeader_total.png" alt="" />
+            <img className="img" src={bannerIMG} alt="" />
         </div>
     )
 }
