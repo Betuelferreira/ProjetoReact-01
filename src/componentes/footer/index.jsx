@@ -1,7 +1,7 @@
 import React from "react";
 import "./footer.css"
 import {BsFacebook, BsInstagram, BsTwitter} from "react-icons/bs"
-import Logo from '../../assets/logo.png'
+import LogoA from '../../assets/logo_azul.png'
 function Footer(){
     return(
         <footer className="footer_area">
@@ -11,7 +11,7 @@ function Footer(){
                 <a  target="_blank" href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoicHQifQ%3D%3D%22%7D"><BsTwitter color={"#ffffff"} size={20}/></a>
             </div>
             <div className="logo">
-                <img src={Logo} alt="" />
+                <img src={LogoA} alt="" />
 
             </div>
             <h2>Desenvolvido por Betuel</h2>
