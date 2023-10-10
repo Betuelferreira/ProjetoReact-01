@@ -1,10 +1,10 @@
 
 import "./login.css"
-import { useEffect, useState, useContext } from 'react'
-import { Link } from "react-router-dom"
-import { AuthContext } from "../../context/auth"
-import Animacao from '../../assets/enter-otp-animate.svg'
-import LogoA from "../../assets/logo azul.png"
+import { useEffect, useState, useContext } from 'react';
+import { Link } from "react-router-dom";
+import { AuthContext } from "../../context/auth";
+import Animacao from '../../assets/enter-otp-animate.svg';
+import LogoA from "../../assets/logo_azul.png";
 
 export default function Login() {
 
