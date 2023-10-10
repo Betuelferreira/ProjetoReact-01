@@ -4,6 +4,7 @@ import { useEffect, useState, useContext } from 'react'
 import { Link } from "react-router-dom"
 import {AuthContext} from "../../context/auth"
 import "./cadastro.css"
+import Animacao from '../../assets/sign-up-animate.svg'
 
 export default function Cadastro(){
 
@@ -35,23 +36,34 @@ export default function Cadastro(){
 
     return(
         <div className="container_login">
-            
-            <form className="form_login cadastro" onSubmit={HandleSubmit}>
+
+
+            <div className='container_conteudo'>
+                <div className='animacao'>
+
+                    <h1>Cadastre-se agoro
+                        gratúito
+                    </h1>
+                    <img src={Animacao} alt="" />
+                </div>
+
+            <form className="div_direita" onSubmit={HandleSubmit}>
             <div className="logo">
                <Link to="/"><img src="./src/assets/logo.png" alt="Logo" /></Link> 
             </div>
 
             <label htmlFor="">Usuário:</label>
             <input onChange={AddUser} />
-            <label htmlFor="">Senha:</label>
-            <input onChange={AddSenha}/>
             <label htmlFor="">Email:</label>
             <input type='email' onChange={(e)=> setEmail(e.target.value)} />
-            <label htmlFor="">idade:</label>
-            <input type='texto' onChange={(e)=> setIdade(e.target.value)}/>
+            <label  htmlFor="">idade:</label>
+            <input type='number' onChange={(e)=> setIdade(e.target.value)}/>
+            <label htmlFor="">Senha:</label>
+            <input type="password" onChange={AddSenha}/>
             
             <button className="botao" type="submit">Enviar</button>
         </form>
+        </div>
         </div>
         
     )

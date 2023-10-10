@@ -33,12 +33,26 @@
 
 .animacao{
     width: 50%;
+    display: flex;
+    flex-direction: column;
+
+    padding-top: 3em;
+    
     
   }
 
+  .animacao h1{
+    text-align: center;
+    color: #6278f7;
+    font-size: 1.6em;
+    margin: 0;
+    
+}
+
   .animacao img{
-      height: 100%;
-      width: 90%;
+      height: 90%;
+      width: 100%;
+      
   }
 
   .div_direita{

@@ -3,7 +3,7 @@ import "./login.css"
 import { useEffect, useState, useContext } from 'react';
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../context/auth";
-import Animacao from '../../assets/enter-otp-animate.svg';
+import Animacao from '../../assets/tablet-login-animate.svg';
 import LogoA from "../../assets/Logo_azul.png";
 
 export default function Login() {
@@ -35,7 +35,9 @@ export default function Login() {
         <div className="container_login">
 
             <div className="container_conteudo">
+                
                 <div className="animacao">
+                    <h1>Encontre tudo em um so lugar</h1>
                     <img src={Animacao} alt="" />
                 </div>
 
