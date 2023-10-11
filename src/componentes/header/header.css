@@ -3,7 +3,7 @@
   width: 100%;
   position: fixed;
   
-  color: #fff;
+
   padding: 10px 0;
   display: flex;
   align-items: center;
@@ -11,6 +11,7 @@
   box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.2);
     /* text-align: center; */
     transition: 1s;
+    background-color: #82CFFA;
     
 }
 
@@ -19,8 +20,7 @@
   gap: 3rem;
 }
 
-.navegacao a
-header img {
+.navegacao a header img {
   width: 7rem;
   height: 3rem;
 

@@ -48,20 +48,22 @@ export default function Cadastro(){
                 </div>
 
             <form className="div_direita" onSubmit={HandleSubmit}>
-            <div className="logo">
+            <div className="logoCad">
                <Link to="/"><img src="./src/assets/logo.png" alt="Logo" /></Link> 
             </div>
 
+            <div className='inputs'>
             <label htmlFor="">Usuário:</label>
-            <input onChange={AddUser} />
+            <input placeholder='Nome' onChange={AddUser} />
             <label htmlFor="">Email:</label>
-            <input type='email' onChange={(e)=> setEmail(e.target.value)} />
-            <label  htmlFor="">idade:</label>
-            <input type='number' onChange={(e)=> setIdade(e.target.value)}/>
+            <input placeholder='exemblo@hotmail.com' type='email' onChange={(e)=> setEmail(e.target.value)} />
+            <label  htmlFor="">Idade:</label>
+            <input placeholder='Idade' type='number' onChange={(e)=> setIdade(e.target.value)}/>
             <label htmlFor="">Senha:</label>
-            <input type="password" onChange={AddSenha}/>
+            <input placeholder='Senha' type="password" onChange={AddSenha}/>
             
-            <button className="botao" type="submit">Enviar</button>
+            <button className="botaocCad" type="submit">CADASTRAR</button>
+            </div>
         </form>
         </div>
         </div>
