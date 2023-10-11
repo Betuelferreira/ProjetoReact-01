@@ -5,6 +5,7 @@ import { Link } from "react-router-dom"
 import {AuthContext} from "../../context/auth"
 import "./cadastro.css"
 import Animacao from '../../assets/sign-up-animate.svg'
+import Logo from '../../assets/Logo.png'
 
 export default function Cadastro(){
 
@@ -49,7 +50,7 @@ export default function Cadastro(){
 
             <form className="div_direita" onSubmit={HandleSubmit}>
             <div className="logoCad">
-               <Link to="/"><img src="./src/assets/logo.png" alt="Logo" /></Link> 
+               <Link to="/"><img src={Logo} alt="Logo" /></Link> 
             </div>
 
             <div className='inputs'>
