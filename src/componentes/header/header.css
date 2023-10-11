@@ -2,13 +2,15 @@
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   width: 100%;
   position: fixed;
-  background-color: #6278F7;
+  
   color: #fff;
   padding: 10px 0;
   display: flex;
   align-items: center;
-  justify-content: space-around
+  justify-content: space-around;
+  box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.2);
     /* text-align: center; */
+    transition: 1s;
     
 }
 
@@ -31,6 +33,11 @@ header img {
   font-weight: bold;
   size: 25px;
 }
+
+.rolagem{
+  background-color: #6278F7;
+}
+
 
 /* Estilos para telas pequenas (768px ou menor) */
 @media (max-width: 768px) {

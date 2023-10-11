@@ -2,6 +2,7 @@ import React from "react";
 import "./header.css";
 import { Link } from 'react-router-dom';
 import Logo from '../../assets/Logo.png';
+import "./rolagem.js";
 
         function Header() {
             return (
