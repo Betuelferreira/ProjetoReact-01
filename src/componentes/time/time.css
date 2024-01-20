@@ -2,6 +2,7 @@
     text-align: center;
     padding: 28px;
     background-color: #D9F7E9;
+    
 
 
 }
@@ -14,10 +15,12 @@
     
 }
 .cards{
-    display: flex;
+    
     align-items: center;
     justify-content: center;
+    display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     gap:3rem;
     
 }

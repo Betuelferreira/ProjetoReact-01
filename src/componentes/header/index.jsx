@@ -1,11 +1,17 @@
-import React from "react";
+import React, {useState} from "react";
 import "./header.css";
+
 import { Link } from 'react-router-dom';
 import Logo from '../../assets/Logo.png';
 import "./rolagem.js";
 
+
+
         function Header() {
+          
+
             return (
+              
               <header className="navegacao">
                 <Link to="/"><img src={Logo} alt="Logo" /></Link>
 

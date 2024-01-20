@@ -12,6 +12,7 @@
     /* text-align: center; */
     transition: 1s;
     background-color: #82CFFA;
+    z-index: 1;
     
 }
 
